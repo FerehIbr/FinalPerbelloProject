@@ -1,0 +1,55 @@
+﻿@model List<BasketVM>
+@{
+    double subTotal = 0;
+    double ecotax = 0;
+    double total = 0;
+    double vat = 0;
+    double shipping = 0;
+    foreach (BasketVM item in Model)
+    {
+        subTotal += item.Price * item.Count;
+        ecotax = (subTotal * 2) / 100;
+        vat = (subTotal * 20) / 100;
+        shipping = (subTotal * 10) / 100;
+        total = subTotal + ecotax + vat + shipping;
+
+
+    }
+}
+
+@foreach (BasketVM basket in Model)
+{
+    <tr>
+        <td>
+            <a href="single-product.html"><img src="~/assets/images/products/@basket.Image" alt="Cart Product Image" title="Compete Track Tote" class="img-thumbnail"></a>
+        </td>
+        <td>
+            <a href="single-product.html">@basket.Name</a>
+            <span>Delivery Date: 2018-09-22</span>
+            <span>Color: @basket.ColorName</span>
+            <span>Reward Points: 300</span>
+        </td>
+        <td>3</td>
+        <td>
+            <div class="input-group btn-block">
+                <div class="cart-input">
+                    <div class="dec qtybutton dec"><i class="fa fa-angle-down"></i></div>
+                    <input class="cart-input-box prod-count" data-id="@basket.ProductId" data-productCount="@basket.stockCount" data-color="@basket.ColorId" data-size="@basket.SizeId" value="@basket.Count">
+                    <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                    <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                    <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                </div>
+                <span class="input-group-btn">
+                    <button type="submit" data-bs-toggle="tooltip" data-direction="top" class="btn btn-primary" data-original-title="Update"><i class="fa fa-refresh"></i></button>
+                    <a class="deletecard remove-icon pull-right"
+                       asp-action="DeleteCard"
+                       asp-route-id="@basket.ProductId"
+                       asp-route-color="@basket.ColorId"
+                       asp-route-size="@basket.SizeId"><i class="fa fa-times-circle"></i></a>
+                </span>
+            </div>
+        </td>
+        <td>$@subTotal</td>
+        <td>$@total</td>
+    </tr>
+}

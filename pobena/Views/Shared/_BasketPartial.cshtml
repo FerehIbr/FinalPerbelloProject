@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BasketVM>
+@{
+    double subTotal = 0;
+    double ecotax = 0;
+    double total = 0;
+    double vat = 0;
+    foreach (BasketVM item in Model)
+    {
+        subTotal += item.Price * item.Count;
+        ecotax = (subTotal * 2) / 100;
+        vat = (subTotal * 20) / 100;
+        total = subTotal + ecotax + vat;
+    }
+}
+<div class="shopping-cart-content">
+    <ul class="list-unstyled">
+
+        @foreach (BasketVM basketVM in Model)
+        {
+            <li class="single-cart-item media">
+                <div class="shopping-cart-img me-4">
+                    <a href="#">
+                        <img class="img-fluid" alt="Cart Item" src="~/assets/images/cart/@basketVM.Image">
+                        <span class="product-quantity">@basketVM.Count x</span>
+                    </a>
+                </div>
+                <div class="shopping-cart-title flex-grow-1">
+                    <h4><a href="#">@basketVM.Name</a></h4>
+                    <p class="cart-price">$@basketVM.Price</p>
+                    <div class="product-attr">
+                        <span>Size: @basketVM.SizeName</span>
+                        <span>Color: : @basketVM.ColorName</span>
+                    </div>
+                </div>
+                <div class="shopping-cart-delete">
+                    <a href="#" class="deletebasketp"
+                       asp-controller="Basket"
+                       asp-action="DeleteBasket"
+                       asp-route-id="@basketVM.ProductId"
+                       asp-route-color="@basketVM.ColorId"
+                       asp-route-size="@basketVM.SizeId">
+                        <i class="ion ion-md-close"></i>
+                    </a>
+                </div>
+            </li>
+
+        }
+
+    </ul>
+    <div class="shopping-cart-total">
+        <h4>Sub-Total : <span>$@subTotal</span></h4>
+        <h4>Total : <span>$@total</span></h4>
+    </div>
+    <div class="shopping-cart-btn">
+        <a class="default-btn" href="cart.html">view cart</a>
+        <a class="default-btn" href="checkout.html">checkout</a>
+    </div>
+</div>

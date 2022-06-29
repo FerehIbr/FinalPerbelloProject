@@ -1,0 +1,52 @@
+﻿@model RegisterVM
+<form asp-controller="Account" asp-action="Register" method="post">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+    <div class="login-info mb-half">
+        <p>Already have an account? <a href="login.html">Log in instead!</a></p>
+    </div>
+
+    <div class="form-group row">
+        <label for="f-name" class="col-12 col-sm-12 col-md-4 col-form-label">FullName</label>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <input asp-for="FullName" class="form-control" id="f-name" required="">
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="f-name" class="col-12 col-sm-12 col-md-4 col-form-label">FullName</label>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <input asp-for="UserName" class="form-control" id="f-name" required="">
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="email" class="col-12 col-sm-12 col-md-4 col-form-label">Email Address</label>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <input asp-for="Email" class="form-control" id="email" required="">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputpassword" class="col-12 col-sm-12 col-md-4 col-form-label"> Password</label>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <input asp-for="Password" class="form-control" id="inputpassword" required="">
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="c-password" class="col-12 col-sm-12 col-md-4 col-form-label">Confirm Password</label>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <input asp-for="RepeatYourPassword" class="form-control" id="c-password" required="">
+            <span asp-validation-for="RepeatYourPassword" class="text-danger"></span>
+            <button class="pass-show-btn" type="button">Show</button>
+        </div>
+    </div>
+    <div class="register-box d-flex justify-content-end mt-half">
+        <button type="submit" class="default-btn tiny-btn">Register</button>
+    </div>
+</form>
+@section Script{
+    <partial name="_ValidationFormScriptPartial">
+}

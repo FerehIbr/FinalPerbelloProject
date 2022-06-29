@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Blog>
+<div class="breadcrumb-section bgc-offset mb-full">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item" href="index.html">Home</a>
+                    <span class="breadcrumb-item active">Blog</span>
+                </nav>
+            </div>
+        </div> 
+    </div> 
+</div>
+<div id="content" class="main-content-wrapper">
+
+ 
+    <div class="blog-posts-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <main id="primary" class="site-main">
+                        <div class="blog-grid-area">
+                            <div class="row">
+                                @foreach (Blog blog in Model)
+                                {
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <article class="blog-post post-entry">
+                                            <div class="blog-grid">
+                                                <div class="content-wrapper">
+                                                    <div class="post-media">
+                                                        <a asp-controller="blog" asp-action="detail" asp-route-bid="@blog.Id"><img src="~/assets/images/blog/@blog.Image" style="width: 340px;height: 240px;object-fit: cover" alt="Blog Image"></a>
+                                                    </div>
+                                                    <div class="post-content">
+                                                        <ul class="post-category">
+                                                            @foreach (BlogTag blogTag in blog.BlogTags)
+                                                            {
+                                                                if (blogTag.TagId == ViewBag.TagId)
+                                                                {
+                                                                    <li><a asp-controller="blog" asp-action="toTag" asp-route-tag="@blogTag.TagId" style="color: #c1001c;">@blogTag.Tag.Name</a></li>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <li><a asp-controller="blog" asp-action="toTag" asp-route-tag="@blogTag.TagId">@blogTag.Tag.Name</a></li>
+                                                                }
+                                                            }
+                                                        </ul>
+                                                        <h3 class="post-title"><a href="blog-details.html">@blog.Title</a></h3>
+                                                        <p>@blog.Description</p>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <div class="post-meta">
+                                                            <ul>
+                                                                <li>@blog.CreatedAt</li>
+                                                                <li>@blog.Reviews.Count() Comments</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="post-more">
+                                                            <a href="blog-details.html">Read more <i class="fa fa-angle-double-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                }
+                            </div> <!-- end of row -->
+                        </div> <!-- end of blog-grid-area -->
+
+                        <div class="pagination-area">
+                            <div class="row align-items-center">
+                                <div class="col-12 order-2 col-sm-12 col-md-6 order-md-1 col-lg-6">
+                                    <div class="page-amount d-flex justify-content-center justify-content-md-start">
+                                        <p>Showing 7 to 12 of 30 (5 Pages)</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 order-1 col-sm-12 col-md-6 order-md-2 col-lg-6">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-left"></i> <span>Previous</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                        <li class="page-item active"><span class="page-link">2</span></li>
+                                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>Next</span> <i class="fa fa-angle-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- end of pagination-area -->
+                    </main> <!-- end of #primary -->
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div>
+    <!-- End of Blog Posts Section -->
+</div>
+<!-- End of Main Content Wrapper -->

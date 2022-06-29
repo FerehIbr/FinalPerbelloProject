@@ -1,0 +1,33 @@
+﻿@model Setting
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Email</th>
+            <th scope="col">ContactEmail</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Fax</th>
+            <th scope="col">Address</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td><img src="~/assets/img/logo/@Model.Logo" alt="Alternate Text" /></td>
+
+            <td>@Model.Email</td>
+            <td>@Model.ContactEmail</td>
+            <td>@Model.Phone</td>
+            <td>@Model.Fax</td>
+            <td>@Model.Address</td>
+
+        </tr>
+    </tbody>
+</table>

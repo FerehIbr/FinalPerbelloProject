@@ -1,0 +1,67 @@
+﻿@model BlogVM
+<ol>
+    @foreach (Review review in Model.Reviews)
+    {
+
+        if (!review.IsDeleted)
+        {
+            <li class="comment-single media">
+                <div class="comment-author-thumb me-3 me-sm-4">
+                    <img src="assets/images/testimonial/testimonial-1.jpg" alt="Comment Author">
+                </div>
+                <div class="comment-content flex-grow-1">
+                    <div class="comment-meta d-flex justify-content-between align-items-top">
+                        <div class="comment-title">
+                            <h6>@review.Name</h6>
+                            <span><span class="comment-date">@review.CreatedAt?.ToString("MMMM dd")</span> at <span class="comment-time">@review.CreatedAt?.ToString("hh:mm tt")</span></span>
+                        </div>
+                        <div class="comment-reply">
+                            <a href="#"><span>Reply</span></a>
+                            @if (User.Identity.Name == review.Name)
+                            {
+                                <a href="#" data-id="@review.Id" class="changeComment" style=" color: black; border-radius: 15px; border: 1px solid #bfbfbf; padding: 5px 10px; background-color: #ececec;">Change</a>
+                                <a data-id="@review.Id" data-bid="@review.BlogId" class="deleteComment" style=" color: black; border-radius: 15px; border: 1px solid #bfbfbf; padding: 5px 10px; background-color: #ececec;">Delete</a>
+                            }
+                        </div>
+                    </div>
+                    <p>@review.Message</p>
+                </div>
+            </li>
+            <div style="opacity:1;visibility: visible;" class="EditComment">
+
+            </div>
+        }
+    }
+</ol>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+    $(document).on("click", ".deleteComment", function (e) {
+        e.preventDefault();
+        var id = $(this).attr("data-id");
+        var bid = $(this).attr("data-bid");
+        fetch("Delete" + "?id=" + id).then(res => {
+            return res.text();
+        }).then(data => {
+            $(".comments").html(data);
+            $("#MessageMain").val("");
+
+            fetch("CommentCount" + "?id=" + bid).then(response => {
+                return response.text()
+            }).then(data => {
+                $(".CommentCount").html(data);
+            })
+        })
+    })
+
+    $(document).on("click", ".changeComment", function (e) {
+        e.preventDefault();
+        var id = $(this).attr("data-id");
+        fetch("EditComment" + "?id=" + id).then(res => {
+            return res.text()
+        }).then(data => {
+            $(this).parents("li").next().html(data)
+        })
+    })
+</script>
