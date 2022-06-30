@@ -91,6 +91,8 @@ namespace pobena.Areas.Manage.Controllers
                             AppUserId = appUser.Id,
                             ProductId = basketVM.ProductId,
                             Count = basketVM.Count,
+                            ColorId = basketVM.ColorId,
+                            SizeId = basketVM.SizeId,
                             CreatedAt = DateTime.UtcNow.AddHours(4)
                         };
 
@@ -168,6 +170,8 @@ namespace pobena.Areas.Manage.Controllers
                             AppUserId = appUser.Id,
                             ProductId = basketVM.ProductId,
                             Count = basketVM.Count,
+                            ColorId = basketVM.ColorId,
+                            SizeId = basketVM.SizeId,
                             CreatedAt = DateTime.UtcNow.AddHours(4)
                         };
 
