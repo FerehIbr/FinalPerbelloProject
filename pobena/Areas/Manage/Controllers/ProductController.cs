@@ -67,10 +67,8 @@ namespace pobena.Areas.Manage.Controllers
             ViewBag.Sizes = await _context.Sizes.Where(b => !b.IsDeleted).ToListAsync();
             ViewBag.Colors = await _context.Colors.Where(t => !t.IsDeleted).ToListAsync();
 
-
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Product product, bool? status, int page = 1)

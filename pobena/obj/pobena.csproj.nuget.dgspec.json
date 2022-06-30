@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\FinalPobenaProject\\pobena\\pobena.csproj": {}
+    "C:\\Users\\farahei\\Desktop\\forfarah\\pobena\\pobena.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\FinalPobenaProject\\pobena\\pobena.csproj": {
+    "C:\\Users\\farahei\\Desktop\\forfarah\\pobena\\pobena.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\FinalPobenaProject\\pobena\\pobena.csproj",
+        "projectUniqueName": "C:\\Users\\farahei\\Desktop\\forfarah\\pobena\\pobena.csproj",
         "projectName": "pobena",
-        "projectPath": "C:\\Users\\user\\Desktop\\FinalPobenaProject\\pobena\\pobena.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\FinalPobenaProject\\pobena\\obj\\",
+        "projectPath": "C:\\Users\\farahei\\Desktop\\forfarah\\pobena\\pobena.csproj",
+        "packagesPath": "C:\\Users\\farahei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\farahei\\Desktop\\forfarah\\pobena\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\farahei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

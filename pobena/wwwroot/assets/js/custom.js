@@ -28,18 +28,18 @@
     $(document).on("click", ".addtocart", function (e) {
         e.preventDefault();
         let url = $(this).attr("href");
-        console.log(url)
-        fetch(url).then(res => {
-            return res.text()
-            console.log(url)
-        }).then(data => {
-            $(".minicart-inner").html(data);
-            fetch("../../home/count/").then(res => {
-                return res.text()
-            }).then(data => {
-                $(".notification").html(data)
-            })
-        })
+
+        //fetch(url).then(res => {
+        //    return res.text()
+        //    console.log(url)
+        //}).then(data => {
+        //    $(".minicart-inner").html(data);
+        //    fetch("../../home/count/").then(res => {
+        //        return res.text()
+        //    }).then(data => {
+        //        $(".notification").html(data)
+        //    })
+        //})
     })
     $(document).on("click", ".dec", function (e) {
 

@@ -98,7 +98,7 @@
                                                         <div class="product-image">
                                                             <div class="label-product label-sale">-20%</div>
                                                             <div class="label-product label-new">New</div>
-                                                            <a href="single-product.html">
+                                                            <a asp-action="detail" asp-controller="product" asp-route-id="@product.Id">
                                                                 <img src="~/assets/images/products/@product.MainImage" alt="Compete Track Tote" title="Compete Track Tote">
                                                             </a>
                                                             <div class="action-links">
@@ -128,7 +128,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <h4 class="product-name"><a href="single-product.html">Compete Track Tote</a></h4>
+                                                            <h4 class="product-name"><a  href="">Compete Track Tote</a></h4>
                                                             <p class="product-price">
                                                                 @if (product.ProductColorSizes.ElementAt(0).DiscountPrice != 0)
                                                                 {
