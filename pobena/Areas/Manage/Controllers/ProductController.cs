@@ -158,7 +158,7 @@ namespace pobena.Areas.Manage.Controllers
 
             if (product.MainImageFile != null)
             {
-                if (!product.MainImageFile.CheckFileContentType("image/jpeg"))
+                if (!product.MainImageFile.CheckFileContentType("image/jpeg/png"))
                 {
                     ModelState.AddModelError("MainImageFile", "Secilen Seklin Novu Uygun");
                     return View();
@@ -170,7 +170,7 @@ namespace pobena.Areas.Manage.Controllers
                     return View();
                 }
 
-                product.MainImage = product.MainImageFile.CreateFile(_env, "assets", "images", "products");
+                product.MainImage = product.MainImageFile.CreateFile(_env, "assets", "images", "products","single");
             }
             else
             {
@@ -184,7 +184,7 @@ namespace pobena.Areas.Manage.Controllers
 
                 foreach (IFormFile file in product.ProductImagesFile)
                 {
-                    if (!file.CheckFileContentType("image/jpeg"))
+                    if (!file.CheckFileContentType("image/jpeg/png"))
                     {
                         ModelState.AddModelError("ProductImagesFile", "Secilen Seklin Novu Uygun");
                         return View();
@@ -198,7 +198,7 @@ namespace pobena.Areas.Manage.Controllers
 
                     ProductImage productImage = new ProductImage
                     {
-                        Image = file.CreateFile(_env, "assets", "images", "products"),
+                        Image = file.CreateFile(_env, "assets", "images", "products", "single"),
                         CreatedAt = DateTime.UtcNow.AddHours(4)
                     };
 
@@ -334,9 +334,9 @@ namespace pobena.Areas.Manage.Controllers
 
             if (product.MainImageFile != null)
             {
-                if (!product.MainImageFile.CheckFileContentType("image/jpeg"))
+                if (!product.MainImageFile.CheckFileContentType("image/jpeg/png"))
                 {
-                    ModelState.AddModelError("MainImageFile", "Secilen Seklin Novu Uygun");
+                    ModelState.AddModelError("MainImageFile", "Secilen Seklin Novu Uygun Deyil");
                     return View();
                 }
 
@@ -346,7 +346,7 @@ namespace pobena.Areas.Manage.Controllers
                     return View();
                 }
 
-                dBproduct.MainImage = product.MainImageFile.CreateFile(_env, "assets", "img", "product");
+                dBproduct.MainImage = product.MainImageFile.CreateFile(_env, "assets", "images", "products", "single");
 
             }
             else
@@ -361,9 +361,9 @@ namespace pobena.Areas.Manage.Controllers
 
                 foreach (IFormFile file in product.ProductImagesFile)
                 {
-                    if (!file.CheckFileContentType("image/jpeg"))
+                    if (!file.CheckFileContentType("image/jpeg/png"))
                     {
-                        ModelState.AddModelError("ProductImagesFile", "Secilen Seklin Novu Uygun");
+                        ModelState.AddModelError("ProductImagesFile", "Secilen Seklin Novu Uygun Deyil");
                         return View();
                     }
 
@@ -375,7 +375,7 @@ namespace pobena.Areas.Manage.Controllers
 
                     ProductImage productImage = new ProductImage
                     {
-                        Image = file.CreateFile(_env, "assets", "images", "products"),
+                        Image = file.CreateFile(_env, "assets", "images", "products", "single"),
                         CreatedAt = DateTime.UtcNow.AddHours(4)
                     };
 
