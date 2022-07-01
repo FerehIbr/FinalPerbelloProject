@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Product>
+@if (Model.Count() > 0)
+{
+    @foreach (Product product in Model)
+    {
+        <article class="product-layout col-6 col-sm-6 col-md-4 col-lg-4">
+            <div class="product-thumb">
+                <div class="product-inner">
+                    <div class="product-image">
+                        <div class="label-product label-sale">-20%</div>
+                        <div class="label-product label-new">New</div>
+                        <a asp-action="detail" asp-controller="product" asp-route-id="@product.Id">
+                            <img src="~/assets/images/products/@product.MainImage" alt="Compete Track Tote" title="Compete Track Tote">
+                        </a>
+                        <div class="action-links">
+                            <a class="action-btn btn-cart" href="#" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
+                            <a class="action-btn btn-wishlist" href="#" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
+                            <a class="action-btn btn-compare" href="#" title="Add to Compare"><i class="pe-7s-refresh-2"></i></a>
+                            <a class="action-btn btn-quickview" data-bs-toggle="modal" data-bs-target="#product_quick_view" href="#" title="Quick View"><i class="pe-7s-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-caption">
+                        <div class="product-meta d-flex justify-content-between align-items-center">
+                            <div class="product-manufacturer">
+                                <a href="#">Studio Design</a>
+                            </div>
+                            <div class="product-ratings">
+                                <div class="rating-box">
+                                    <ul class="rating d-flex">
+                                        <li><i class="ion ion-md-star-outline"></i></li>
+                                        <li><i class="ion ion-md-star-outline"></i></li>
+                                        <li><i class="ion ion-md-star-outline"></i></li>
+                                        <li><i class="ion ion-md-star-outline"></i></li>
+                                        <li><i class="ion ion-md-star-outline disabled"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="product-name"><a href="single-product.html">Compete Track Tote</a></h4>
+                        <p class="product-price">
+                            <span class="price-old">$54.65</span>
+                            <span class="price-new">$43.72</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    }
+
+
+}
+else
+{
+    <p><i style="font-family: 'Text Me One'">We have no products in your Frontpage collection. This placeholder will appear until we add a product to this collection.</i></p>
+}

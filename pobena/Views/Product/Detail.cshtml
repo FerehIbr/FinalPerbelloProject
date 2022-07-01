@@ -1,4 +1,4 @@
-﻿
+﻿@model Product
 
 <div class="breadcrumb-section bgc-offset mb-full">
     <div class="container">
@@ -11,7 +11,7 @@
                 </nav>
             </div>
         </div>
-    </div> 
+    </div>
 </div>
 
 <div id="content" class="main-content-wrapper">
@@ -185,15 +185,18 @@
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            <button type="button" class="default-btn">Add to Cart</button>
+
+                                                            <a class="btn-cart addtocart" asp-controller="Home"
+                                                               asp-action="AddToBasket" asp-route-id="@Model.Id"
+                                                                 asp-route-sizeid="@Model.ProductColorSizes.ElementAt(0).SizeId"
+                                                                   asp-route-colorid="@Model.ProductColorSizes.ElementAt(0).ColorId"
+                                                          >  Add to Cart</a>
+
                                                         </li>
                                                     </ul>
                                                 </form>
                                             </div>
-                                            <div class="wishlist-compare">
-                                                <button class="btn-wishlist" type="button" title="Add to Wishlist">Add to Wishlist</button>
-                                                <button class="btn-compare" type="button" title="Add to Compare">Add to Compare</button>
-                                            </div>
+                                          
                                         </div>
 
                                         <div class="social-sharing d-flex align-items-center">

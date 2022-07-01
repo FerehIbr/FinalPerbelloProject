@@ -61,8 +61,15 @@ using pobena.ViewModels.Shop;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "C:\Users\farahei\Desktop\forfarah\pobena\Views\_ViewImports.cshtml"
+using pobena.ViewModels.Order;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"81d8061b599bd1094c6b3222f173955b6368d37a", @"/Views/Shared/_AddReviewPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"72c5382690c3d220b6e61a217228622a75456c7b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7cbf643bf37996a909214e29964000d38761a808", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__AddReviewPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<BlogVM>
     {
         #pragma warning disable 1998

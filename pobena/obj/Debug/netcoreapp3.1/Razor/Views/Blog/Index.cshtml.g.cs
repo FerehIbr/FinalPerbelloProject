@@ -61,8 +61,15 @@ using pobena.ViewModels.Shop;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "C:\Users\farahei\Desktop\forfarah\pobena\Views\_ViewImports.cshtml"
+using pobena.ViewModels.Order;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2c7ca81ffce7597cd3009004708538a4c8156c5e", @"/Views/Blog/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"72c5382690c3d220b6e61a217228622a75456c7b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7cbf643bf37996a909214e29964000d38761a808", @"/Views/_ViewImports.cshtml")]
     public class Views_Blog_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Blog>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("width: 340px;height: 240px;object-fit: cover"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -133,8 +140,8 @@ using pobena.ViewModels.Shop;
                                                 <div class=""content-wrapper"">
                                                     <div class=""post-media"">
                                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c7ca81ffce7597cd3009004708538a4c8156c5e7660", async() => {
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2c7ca81ffce7597cd3009004708538a4c8156c5e7876", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c7ca81ffce7597cd3009004708538a4c8156c5e7839", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2c7ca81ffce7597cd3009004708538a4c8156c5e8055", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -200,7 +207,7 @@ AddHtmlAttributeValue("", 1489, blog.Image, 1489, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("                                                                    <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c7ca81ffce7597cd3009004708538a4c8156c5e12524", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c7ca81ffce7597cd3009004708538a4c8156c5e12703", async() => {
 #nullable restore
 #line 39 "C:\Users\farahei\Desktop\forfarah\pobena\Views\Blog\Index.cshtml"
                                                                                                                                                                       Write(blogTag.Tag.Name);
@@ -250,7 +257,7 @@ AddHtmlAttributeValue("", 1489, blog.Image, 1489, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("                                                                    <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c7ca81ffce7597cd3009004708538a4c8156c5e15793", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c7ca81ffce7597cd3009004708538a4c8156c5e15972", async() => {
 #nullable restore
 #line 43 "C:\Users\farahei\Desktop\forfarah\pobena\Views\Blog\Index.cshtml"
                                                                                                                                               Write(blogTag.Tag.Name);

@@ -61,8 +61,15 @@ using pobena.ViewModels.Shop;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "C:\Users\farahei\Desktop\forfarah\pobena\Views\_ViewImports.cshtml"
+using pobena.ViewModels.Order;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f250f2ac1dae28c2aba7bde8339bf1de43b5a751", @"/Views/Contact/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"72c5382690c3d220b6e61a217228622a75456c7b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7cbf643bf37996a909214e29964000d38761a808", @"/Views/_ViewImports.cshtml")]
     public class Views_Contact_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("contact-form"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -128,7 +135,7 @@ using pobena.ViewModels.Shop;
                             <h2>get In Touch</h2>
                         </div>
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f250f2ac1dae28c2aba7bde8339bf1de43b5a7517111", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f250f2ac1dae28c2aba7bde8339bf1de43b5a7517290", async() => {
                 WriteLiteral(@"
                             <div class=""form-row mb-2"">
                                 <div class=""form-group col-12 col-sm-12 col-md-6"">
@@ -279,7 +286,7 @@ using pobena.ViewModels.Shop;
                 <div class=""col-12 col-sm-12 col-md-12 col-lg-5"">
                     <div class=""newsletter-form-wrapper"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f250f2ac1dae28c2aba7bde8339bf1de43b5a75115868", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f250f2ac1dae28c2aba7bde8339bf1de43b5a75116047", async() => {
                 WriteLiteral("\r\n                            <input type=\"email\" name=\"email\" placeholder=\"Enter you email address here...\"");
                 BeginWriteAttribute("value", " value=\"", 8616, "\"", 8624, 0);
                 EndWriteAttribute();

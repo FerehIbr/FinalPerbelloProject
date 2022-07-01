@@ -48,18 +48,18 @@ namespace pobena.Controllers
         public async Task<IActionResult> Detail(int? id)
         {
 
-            Review review = await _context.Reviews.FirstOrDefaultAsync(r => r.BlogId == id);
+            //Review review = await _context.Reviews.FirstOrDefaultAsync(r => r.BlogId == id);
           
             ViewBag.Categories = await _context.Categories.ToListAsync();
             ViewBag.Tags = await _context.Tags.ToListAsync();
             ViewBag.Blogs = await _context.Blogs.ToListAsync();
             if (id == null) return BadRequest();
-            Blog blog = await _context.Blogs
-                .Include(b => b.Reviews)
+            Product product = await _context.Products
+                .Include(b => b.ProductColorSizes)
                  .FirstOrDefaultAsync(u => u.Id == id);
-            if (blog == null) return NotFound();
+            if (product == null) return NotFound();
 
-            return View(blog);
+            return View(product);
         }
 
         public async Task<IActionResult> AddBasket(int? id, int count = 1, int colorid=1, int sizeid=1)

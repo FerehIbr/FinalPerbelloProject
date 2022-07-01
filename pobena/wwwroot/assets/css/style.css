@@ -6860,15 +6860,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c32 - Layout - Blog
-*************************************************************/
-
-
-/**
- * Layout Blog
- *
- */
 
 .blog-grid-area {
     margin-bottom: 40px;
@@ -6900,15 +6891,7 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c32 - Layout - Blog Details
-*************************************************************/
 
-
-/**
- * Layout Blog Details
- *
- */
 
 .single-post-wrapper .post-media {
     margin-bottom: 40px;
@@ -7056,15 +7039,6 @@ header.header-type-4 .header-text span:first-child {
     align-items: flex-start;
 }
 
-/************************************************************
-    c33 - Layout - Boxed
-*************************************************************/
-
-
-/**
- * Layout Boxed Layout
- *
- */
 
 .boxed-layout .main-content-wrapper {
     max-width: 1220px;
@@ -7119,16 +7093,6 @@ header.header-type-4 .header-text span:first-child {
 }
 
 
-
-/************************************************************
-    c34 - Layout - Fluid
-*************************************************************/
-
-
-/**
- * Layout Fluid Layout
- *
- */
 
 .fluid-layout .container {
     max-width: 100%;
@@ -7208,16 +7172,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c35 - Layout - About Page
-*************************************************************/
-
-
-/**
- * Layout About Page
- *
- */
-
 .page-about p:not(.lead) {
     font-size: 14px;
     line-height: 24px;
@@ -7228,16 +7182,6 @@ header.header-type-4 .header-text span:first-child {
 }
 
 
-
-/************************************************************
-    c36 - Layout - Contact Page
-*************************************************************/
-
-
-/**
- * Layout Contact
- *
- */
 
 .contact-form-wrapper {
     padding: 30px;
@@ -7404,17 +7348,6 @@ header.header-type-4 .header-text span:first-child {
 }
 
 
-
-/************************************************************
-    c39 - Layout - Modal
-*************************************************************/
-
-
-/**
- * Layout Modal
- *
- */
-
 .modal {
     z-index: 9990;
 }
@@ -7454,3 +7387,224 @@ header.header-type-4 .header-text span:first-child {
     background-color: #000;
     z-index: 9950;
 }
+.about {
+    padding: 180px 0;
+    background-image: url(../img/background/inner-bnr-2.jpg);
+    background-color: #041b26;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+    .about .about-text {
+        text-align: center;
+    }
+
+        .about .about-text h1 {
+            font-size: 60px;
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin: 0;
+            margin-bottom: 10px;
+            word-break: break-word;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .about .about-text a {
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+
+            .about .about-text a:hover {
+                color: #e3a51e;
+            }
+
+        .about .about-text i {
+            color: #fff;
+            margin-left: 5px;
+        }
+
+        .about .about-text span {
+            color: #cfa86e;
+            font-size: 20px;
+        }
+
+.checkdetail {
+    padding: 50px 0;
+    background: #041b26;
+}
+
+    .checkdetail .billing input {
+        color: #666666;
+        border: 1px solid #ccc;
+        padding: 12px 10px;
+        width: 100%;
+        font-size: 14px;
+        background: #f7f7f7;
+        margin-top: 20px;
+    }
+
+    .checkdetail .billing label {
+        margin-top: 10px;
+        color: #fff;
+    }
+
+    .checkdetail .billing h3 {
+        margin-top: 20px;
+        color: #fff;
+    }
+
+    .checkdetail .orderdetail {
+        background-color: rgba(3, 14, 22, 0.4196078431);
+    }
+
+        .checkdetail .orderdetail h3 {
+            margin-top: 20px;
+            color: #fff;
+        }
+
+    .checkdetail .order-summary-table {
+        background-color: rgba(3, 14, 22, 0.4196078431);
+        margin-top: 34px;
+    }
+
+        .checkdetail .order-summary-table .table,
+        .checkdetail .order-summary-table table {
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 15px;
+            white-space: nowrap;
+        }
+
+            .checkdetail .order-summary-table .table tr td,
+            .checkdetail .order-summary-table .table tr th,
+            .checkdetail .order-summary-table table tr td,
+            .checkdetail .order-summary-table table tr th {
+                font-weight: 500;
+                vertical-align: middle;
+                padding: 15px 10px;
+                border-width: 1px;
+            }
+
+                .checkdetail .order-summary-table .table tr td a,
+                .checkdetail .order-summary-table .table tr th a,
+                .checkdetail .order-summary-table table tr td a,
+                .checkdetail .order-summary-table table tr th a {
+                    color: #fff;
+                    font-weight: 400;
+                }
+
+                .checkdetail .order-summary-table .table tr td strong,
+                .checkdetail .order-summary-table .table tr th strong,
+                .checkdetail .order-summary-table table tr td strong,
+                .checkdetail .order-summary-table table tr th strong {
+                    font-weight: 400;
+                }
+
+            .checkdetail .order-summary-table .table tr td,
+            .checkdetail .order-summary-table table tr td {
+                font-weight: 400;
+            }
+
+                .checkdetail .order-summary-table .table tr td a,
+                .checkdetail .order-summary-table table tr td a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+        .checkdetail .order-summary-table .shipping-type {
+            text-align: left;
+        }
+
+            .checkdetail .order-summary-table .shipping-type li {
+                margin-bottom: 5px;
+            }
+
+                .checkdetail .order-summary-table .shipping-type li:last-child {
+                    margin-bottom: 0;
+                }
+
+    .checkdetail .order-payment-method {
+        background-color: rgba(3, 14, 22, 0.4196078431);
+        padding: 40px 20px 30px;
+    }
+
+    .checkdetail .single-payment-method {
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+        .checkdetail .single-payment-method:last-child {
+            margin-bottom: 0;
+        }
+
+        .checkdetail .single-payment-method:first-child .payment-method-details {
+            display: block;
+        }
+
+        .checkdetail .single-payment-method label,
+        .checkdetail .single-payment-method .custom-control-label {
+            color: #fff !important;
+            font-weight: 500;
+        }
+
+        .checkdetail .single-payment-method .paypal-card {
+            max-width: 150px;
+            height: 50px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .checkdetail .single-payment-method .payment-method-details {
+            background-color: rgba(3, 14, 22, 0.4196078431);
+            color: #fff;
+            font-weight: 400;
+            font-size: 13px;
+            padding: 10px;
+            position: relative;
+            margin-top: 20px;
+            display: none;
+        }
+
+            .checkdetail .single-payment-method .payment-method-details:after {
+                content: "";
+                position: absolute;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid rgba(3, 14, 22, 0.4196078431);
+                bottom: 100%;
+            }
+
+            .checkdetail .single-payment-method .payment-method-details * {
+                margin: 0;
+            }
+
+    .checkdetail button {
+        border-radius: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        color: #e3a51e;
+        outline: none;
+        box-shadow: none;
+        transition: 0.4s;
+        display: inline-block;
+        padding: 14px 25px;
+        background-color: #333333;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    .checkdetail .summary-footer-area label {
+        color: #fff;
+    }
+
+    .checkdetail .summary-footer-area a {
+        text-decoration: none;
+        color: #fff;
+    }

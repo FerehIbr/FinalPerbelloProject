@@ -1006,3 +1006,6 @@ C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\pobena.dll
 C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\pobena.pdb
 C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\pobena.genruntimeconfig.cache
 C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ShopProductPartial.cshtml.g.cs
+C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\Razor\Views\Order\Create.cshtml.g.cs
+C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_OrderPartial.cshtml.g.cs
