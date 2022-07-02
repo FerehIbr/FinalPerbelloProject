@@ -1,0 +1,57 @@
+﻿@model List<Product>
+@foreach (Product product in Model)
+{
+    <article class="product-layout product-list">
+        <div class="product-thumb">
+            <div class="product-inner d-flex align-items-center">
+                <div class="product-image mb-4 mb-md-0 me-md-4 me-xl-5">
+                    <div class="label-product label-sale">-20%</div>
+                    <div class="label-product label-new">New</div>
+                    <a asp-action="detail" asp-controller="product" asp-route-id="@product.Id">
+                        <img src="~/assets/images/products/@product.MainImage" title="Compete Track Tote" alt="Compete Track Tote">
+                    </a>
+                    <div class="action-links">
+                        <a class="btn-cart addtocart" asp-controller="Home"
+                           asp-action="AddToBasket" asp-route-id="@product.Id"
+                           asp-route-sizeid="@product.ProductColorSizes.ElementAt(0).SizeId"
+                           asp-route-colorid="@product.ProductColorSizes.ElementAt(0).ColorId" title="Add to Cart"><i class="pe-7s-shopbag"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-caption flex-grow-1">
+                    <div class="product-manufacturer">
+                        <a href="#">Studio Design</a>
+                    </div>
+                    <h4 class="product-name">
+                        <a href="single-product.html">@product.Name</a>
+                    </h4>
+                    <div class="product-ratings">
+                        <div class="rating-box">
+                            <ul class="rating d-flex">
+                                <li><i class="ion ion-md-star-outline"></i></li>
+                                <li><i class="ion ion-md-star-outline"></i></li>
+                                <li><i class="ion ion-md-star-outline"></i></li>
+                                <li><i class="ion ion-md-star-outline"></i></li>
+                                <li><i class="ion ion-md-star-outline disabled"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="product-price">
+                        @if (product.ProductColorSizes.ElementAt(0).DiscountPrice != 0)
+                        {
+                            <span class="price-old">$@product.Price</span>
+                            <span class="price-new">$@product.DiscountPrice</span>
+                        }
+                        else
+                        {
+                            <span class="price-old">$@product.Price</span>
+                        }
+                    </p>
+                    <div class="product-des">
+                        <p>@product.Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+}

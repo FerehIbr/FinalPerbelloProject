@@ -33,8 +33,13 @@
                     </div>
                 </div>
                 <div class="shopping-cart-delete">
-                    <a class="deletebasketp" asp-controller="Basket" asp-action="DeleteBasket" asp-route-id="@basketVM.ProductId" asp-route-colorid="@basketVM.ColorId"
-                       asp-route-sizeid="@basketVM.SizeId">
+                    <a class="deletebasket" 
+                       asp-controller="Basket" 
+                       asp-action="DeleteBasket"
+                       asp-route-id="@basketVM.ProductId"
+                       asp-route-color="@basketVM.ColorId"
+                       asp-route-size="@basketVM.SizeId"
+                       >
                         <i class="ion ion-md-close"></i>
                     </a>
                 </div>
@@ -52,4 +57,3 @@
         <a class="default-btn" asp-controller="Order" asp-action="Create">checkout</a>
     </div>
 </div>
- 

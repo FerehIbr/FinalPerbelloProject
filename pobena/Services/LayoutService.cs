@@ -41,7 +41,6 @@ namespace pobena.Services
                 basketVM.Image = dbProduct.MainImage;
                 basketVM.Price = dbProduct.DiscountPrice > 0 ? dbProduct.DiscountPrice : dbProduct.Price;
                 basketVM.Name = dbProduct.Name;
-
             }
 
             return basketVMs;

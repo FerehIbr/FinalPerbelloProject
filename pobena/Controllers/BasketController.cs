@@ -43,24 +43,8 @@ namespace pobena.Controllers
             {
                 Product dbProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketVM.ProductId);
                 basketVM.Image = dbProduct.MainImage;
-                //basketVM.Price = dbProduct.DiscountPrice > 0 ? dbProduct.DiscountPrice : dbProduct.Price;
+                basketVM.Price = dbProduct.DiscountPrice > 0 ? dbProduct.DiscountPrice : dbProduct.Price;
                 basketVM.Name = dbProduct.Name;
-            }
-            List<ProductColorSize> productColorSizes = await _context
-               .ProductColorSizes
-               .Include(p => p.Color)
-               .Include(p => p.Size)
-               .ToListAsync();
-
-            foreach (ProductColorSize productColor in productColorSizes)
-            {
-                foreach (BasketVM basketVM in basketVMs)
-                {
-                    if (productColor.ProductId == basketVM.ProductId && productColor.ColorId == basketVM.ColorId && productColor.SizeId == basketVM.SizeId)
-                    {
-                        ViewBag.ProdCount = productColor.StockCount;
-                    }
-                }
             }
             return View(basketVMs);
         }
@@ -88,31 +72,7 @@ namespace pobena.Controllers
                 if (dbProduct == null) return NotFound();
                 basketVM.Image = dbProduct.MainImage;
                 basketVM.Name = dbProduct.Name;
-                if (dbProduct.ProductColorSizes.Any(p => p.ProductId == basketVM.ProductId && p.ColorId == basketVM.ColorId && p.SizeId == basketVM.SizeId))
-                {
-                    basketVM.stockCount = dbProduct.ProductColorSizes.Find(p => p.ColorId == basketVM.ColorId && p.SizeId == basketVM.SizeId).StockCount;
-                }
-                else
-                {
-                    basketVM.stockCount = 0;
-                }
-            }
-
-            List<ProductColorSize> productColorSizes = await _context
-              .ProductColorSizes
-              .Include(p => p.Color)
-              .Include(p => p.Size)
-              .ToListAsync();
-
-            foreach (ProductColorSize productColor in productColorSizes)
-            {
-                foreach (BasketVM basketVM in basketVMs)
-                {
-                    if (productColor.ProductId == basketVM.ProductId && productColor.ColorId == basketVM.ColorId && productColor.SizeId == basketVM.SizeId)
-                    {
-                        ViewBag.ProdCount = productColor.StockCount;
-                    }
-                }
+                basketVM.Price = dbProduct.DiscountPrice > 0 ? dbProduct.DiscountPrice : dbProduct.Price;
             }
             return PartialView("_BasketPartial", basketVMs);
         }
@@ -155,26 +115,11 @@ namespace pobena.Controllers
                 basketVM.Image = dbProduct.MainImage;
                 basketVM.Name = dbProduct.Name;
                 basketVM.ExTax = dbProduct.ExTax;
+                basketVM.Price = dbProduct.DiscountPrice > 0 ? dbProduct.DiscountPrice : dbProduct.Price;
             }
             HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(basketVMs));
 
 
-            List<ProductColorSize> productColorSizes = await _context
-              .ProductColorSizes
-              .Include(p => p.Color)
-              .Include(p => p.Size)
-              .ToListAsync();
-
-            foreach (ProductColorSize productColor in productColorSizes)
-            {
-                foreach (BasketVM basketVM in basketVMs)
-                {
-                    if (productColor.ProductId == basketVM.ProductId && productColor.ColorId == basketVM.ColorId && productColor.SizeId == basketVM.SizeId)
-                    {
-                        ViewBag.ProdCount = productColor.StockCount;
-                    }
-                }
-            }
             cookie = JsonConvert.SerializeObject(basketVMs);
 
 
@@ -385,15 +330,16 @@ namespace pobena.Controllers
                 return BadRequest();
             }
 
-            HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(basketVMs));
-
             foreach (BasketVM basketVM in basketVMs)
             {
                 Product dbProduct = await _context.Products.FirstOrDefaultAsync(p => p.Id == basketVM.ProductId);
                 basketVM.Image = dbProduct.MainImage;
-                //basketVM.Price = dbProduct.DiscountPrice > 0 ? dbProduct.DiscountPrice : dbProduct.Price;
+                basketVM.Price = dbProduct.DiscountPrice > 0 ? dbProduct.DiscountPrice : dbProduct.Price;
                 basketVM.Name = dbProduct.Name;
             }
+
+            HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(basketVMs));
+
 
             List<ProductColorSize> productColorSizes = await _context
               .ProductColorSizes

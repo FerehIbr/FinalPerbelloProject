@@ -7608,3 +7608,30 @@ header.header-type-4 .header-text span:first-child {
         text-decoration: none;
         color: #fff;
     }
+.active-color {
+    color: #cc2121 !important;
+}
+.active-price {
+    color: #cc2121 !important;
+}
+
+    .active-price::before {
+        background: #cc2121 !important;
+        color: white !important;
+    }
+.active-category {
+    color: #cc2121 !important;
+}
+
+    .active-category::before {
+        background: #cc2121 !important;
+        color: white !important;
+    }
+.active-brand {
+    color: #cc2121 !important;
+}
+
+    .active-brand::before {
+        background: #cc2121 !important;
+        color: white !important;
+    }
