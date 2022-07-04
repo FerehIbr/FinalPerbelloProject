@@ -99,7 +99,7 @@
                                                             <div class="label-product label-sale">-20%</div>
                                                             <div class="label-product label-new">New</div>
                                                             <a asp-action="detail" asp-controller="product" asp-route-id="@product.Id">
-                                                                <img src="~/assets/images/products/@product.MainImage" alt="Compete Track Tote" title="Compete Track Tote">
+                                                                <img src="~/assets/images/products/single/@product.MainImage" alt="Compete Track Tote" title="Compete Track Tote">
                                                             </a>
                                                             <div class="action-links">
                                                                 <a class="btn-cart addtocart" asp-controller="Home"
@@ -130,14 +130,14 @@
                                                             </div>
                                                             <h4 class="product-name"><a  href="">Compete Track Tote</a></h4>
                                                             <p class="product-price">
-                                                                @if (product.ProductColorSizes.ElementAt(0).DiscountPrice != 0)
+                                                                @if (product.DiscountPrice != 0)
                                                                 {
-                                                                    <span class="price-old">$@product.ProductColorSizes.ElementAt(0).DiscountPrice</span>
-                                                                    <span class="price-new">$@product.ProductColorSizes.ElementAt(0).Price</span>
+                                                                    <span class="price-old">$@product.DiscountPrice</span>
+                                                                    <span class="price-new">$@product.Price</span>
                                                                 }
                                                                 else
                                                                 {
-                                                                    <span class="price-new">$@product.ProductColorSizes.ElementAt(0).Price</span>
+                                                                    <span class="price-new">$@product.Price</span>
                                                                 }
                                                             </p>
                                                         </div>

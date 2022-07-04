@@ -9,5 +9,6 @@ namespace pobena.ViewModels.Shop
     public class ShopVM
     {
         public IEnumerable<Product> Products { get; set; }
+        public IEnumerable<ProductImage> productImages { get; set; }
     }
 }

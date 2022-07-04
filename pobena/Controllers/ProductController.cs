@@ -56,6 +56,7 @@ namespace pobena.Controllers
             if (id == null) return BadRequest();
             Product product = await _context.Products
                 .Include(b => b.ProductColorSizes)
+                   .Include(b => b.ProductImages)
                  .FirstOrDefaultAsync(u => u.Id == id);
             if (product == null) return NotFound();
 
