@@ -158,9 +158,9 @@ namespace pobena.Areas.Manage.Controllers
 
             if (product.MainImageFile != null)
             {
-                if (!product.MainImageFile.CheckFileContentType("image/jpeg/png"))
+                if (!product.MainImageFile.CheckFileContentType("image/jpeg"))
                 {
-                    ModelState.AddModelError("MainImageFile", "Secilen Seklin Novu Uygun");
+                    ModelState.AddModelError("MainImageFile", "Secilen Seklin Novu Uygun deyil");
                     return View();
                 }
 
@@ -184,9 +184,9 @@ namespace pobena.Areas.Manage.Controllers
 
                 foreach (IFormFile file in product.ProductImagesFile)
                 {
-                    if (!file.CheckFileContentType("image/jpeg/png"))
+                    if (!file.CheckFileContentType("image/jpeg"))
                     {
-                        ModelState.AddModelError("ProductImagesFile", "Secilen Seklin Novu Uygun");
+                        ModelState.AddModelError("ProductImagesFile", "Secilen Seklin Novu Uygun deyil");
                         return View();
                     }
 

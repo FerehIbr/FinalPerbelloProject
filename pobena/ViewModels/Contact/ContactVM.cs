@@ -8,6 +8,7 @@ namespace pobena.ViewModels.Contact
 {
     public class ContactVM
     {
-        public List<Setting> Settings { get; set; }
+        public Setting Setting { get; set; }
+        public pobena.Models.Contact Contact { get; set; }
     }
 }

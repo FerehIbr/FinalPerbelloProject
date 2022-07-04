@@ -1,4 +1,6 @@
-﻿<div class="breadcrumb-section bgc-offset mb-full">
+﻿@model ContactVM
+
+<div class="breadcrumb-section bgc-offset mb-full">
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12">
@@ -8,12 +10,12 @@
                 </nav>
             </div>
         </div>
-    </div> 
+    </div>
 </div>
 
 <main id="content" class="main-content-wrapper page-about">
 
-   
+
     <section class="contact-section">
         <div class="container">
             <div class="row">
@@ -30,23 +32,19 @@
                         <div class="section-title left-aligned with-border">
                             <h2>get In Touch</h2>
                         </div>
-                        <form id="contact-form" action="https://whizthemes.com/nazmul/php/mail.php" method="post">
+                        <form id="contact-form" method="post" asp-action="ContactMessage" asp-controller="contact" enctype="multipart/form-data" class="contact-form">
                             <div class="form-row mb-2">
                                 <div class="form-group col-12 col-sm-12 col-md-6">
-                                    <input type="text" name="name" class="form-control" id="com-name" placeholder="Your Name *" required>
+                                    <input  asp-for="Contact.Name" placeholder="Your Name *" required>
                                 </div>
                                 <div class="form-group col-12 col-sm-12 col-md-6">
-                                    <input type="email" name="email" class="form-control" id="com-email" placeholder="Your Email *" required>
+                                    <input  asp-for="Contact.Email" placeholder="Your Email *" required>
                                 </div>
                             </div>
+                           
                             <div class="form-row mb-2">
                                 <div class="form-group col-12 col-sm-12 col-md-12">
-                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Your Subject">
-                                </div>
-                            </div>
-                            <div class="form-row mb-2">
-                                <div class="form-group col-12 col-sm-12 col-md-12">
-                                    <textarea id="comment" placeholder="Type Your Message....." name="message" class="form-control" required></textarea>
+                                    <textarea  asp-for="Contact.Message" placeholder="Type Your Message....." class="form-control" required></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -56,10 +54,10 @@
                             </div>
                         </form>
                         <p class="form-messege"></p>
-                    </div> 
+                    </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </section>
 
     <section class="team-section pt-full pb-half bgc-offset">
@@ -101,18 +99,18 @@
                         </div>
                     </div>
                 </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
     </section>
- 
-  
+
+
     <div class="client-section mb-full">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12">
                     <div class="clients element-carousel" data-visible-slide="5" data-visible-xl-slide="5" data-visible-lg-slide="5" data-visible-md-slide="4" data-visible-sm-slide="3" data-visible-xs-slide="2" data-loop="true" data-autoplay-delay="3000" data-space-between="0" data-effect="slide">
 
-                     
+
                         <div class="swiper-wrapper">
                             <div class="item-brand swiper-slide">
                                 <img src="assets/images/brand/client-logo-1.jpg" alt="Client Logo">
@@ -139,12 +137,12 @@
                                 <img src="assets/images/brand/client-logo-8.jpg" alt="Client Logo">
                             </div>
                         </div>
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  
+
     <section class="newsletter-section vpadding bgc-offset">
         <div class="container">
             <div class="row align-items-center">
@@ -162,9 +160,9 @@
                         </form>
                     </div>
                 </div>
-            </div> 
-        </div> 
+            </div>
+        </div>
     </section>
-   
+
 </main>
 

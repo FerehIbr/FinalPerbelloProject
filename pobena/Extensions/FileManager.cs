@@ -17,14 +17,16 @@ namespace pobena.Extensions
 
         public static bool CheckFileContentType(this IFormFile file, string contentType)
         {
-            var contentTypes = contentType.Split("/");
+            //var contentTypes = contentType.Split("/");
 
-            foreach (var type in contentTypes)
-            {
-                return file.ContentType == type;
-            }
+            //foreach (var type in contentTypes)
+            //{
+            //    return file.ContentType == type;
+            //}
 
-            return false;
+            //return false;
+
+            return file.ContentType == contentType;
         }
 
         public static string CreateFile(this IFormFile file, IWebHostEnvironment env, params string[] folders)
