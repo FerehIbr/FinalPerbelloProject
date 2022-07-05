@@ -68,7 +68,7 @@ namespace pobena.Controllers
             await _context.Contacts.AddAsync(contact);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("index");
+            return Ok();
         }
     }
 }

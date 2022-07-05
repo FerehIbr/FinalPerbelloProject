@@ -14,19 +14,22 @@
                 <select class="form-control" name="status">
                     @if (ViewBag.Status == null)
                     {
-        <option selected>All</option>
+                        <option selected>All</option>
                         <option value="false">Active</option>
-                                        <option value="true">DeActive</option> }
-                                                    else if (ViewBag.Status == true)
-                                                    {
-                                        <option>All</option>
-                                                        <option value="false">Active</option>
-                                                                        <option value="true" selected>DeActive</option> }
-                                                                                    else
-                                                                                    {
-                                                                        <option>All</option>
-                                                                                        <option value="false" selected>Active</option>
-                                                                                                        <option value="true">DeActive</option>}
+                        <option value="true">DeActive</option> 
+                    }
+                    else if (ViewBag.Status == true)
+                    {
+                        <option>All</option>
+                        <option value="false">Active</option>
+                        <option value="true" selected>DeActive</option> 
+                    }
+                    else
+                    {
+                        <option>All</option>
+                        <option value="false" selected>Active</option>
+                        <option value="true">DeActive</option>
+                    }
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Filter</button>
@@ -66,7 +69,8 @@
             <a class="btn btn-warning" asp-action="Update" asp-route-status="@ViewBag.Status" asp-route-page="@ViewBag.PageIndex" asp-route-id="@product.Id">Update</a>
             <a class="btn btn-danger" asp-controller="Product" asp-action="Delete" asp-area="manage" asp-route-status="@ViewBag.Status" asp-route-page="@ViewBag.PageIndex" asp-route-id="@product.Id">Delete</a>
         </td>
-    </tr>}
+    </tr>
+    }
             </tbody>
         </table>
     </div>

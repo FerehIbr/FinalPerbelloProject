@@ -58,6 +58,12 @@ namespace pobena.Areas.Manage.Controllers
             }
             Microsoft.AspNetCore.Identity.SignInResult signInResult = await _signInManager.PasswordSignInAsync(appUser, loginVM.Password, loginVM.RememberMe, true);
 
+            if (signInResult.IsNotAllowed)
+            {
+                ModelState.AddModelError("", "Please verify your email first");
+                return View(loginVM);
+            }
+
             if (!signInResult.Succeeded)
             {
                 ModelState.AddModelError("", "Email Or Password Is InCorrect");
