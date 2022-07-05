@@ -43,6 +43,17 @@ namespace pobena.Areas.Manage.Controllers
 
             return View(products.Skip((page - 1) * 5).Take(5));
         }
+        public async Task<IActionResult> Restore(int? id, bool? status, int page = 1)
+        {
+            if (id == null) return BadRequest();
+            Product product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id && p.IsDeleted);
+            if (product == null) return NotFound();
+            product.IsDeleted = false;
+            await _context.SaveChangesAsync();
+
+
+            return RedirectToAction("index", new { status, page });
+        }
 
         public async Task<IActionResult> Detail(int? id, bool? status, int page = 1)
         {
@@ -425,7 +436,11 @@ namespace pobena.Areas.Manage.Controllers
 
             if (product == null) return NotFound();
 
-            return View(product);
+            product.IsDeleted = true;
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("index");
         }
 
     }

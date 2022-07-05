@@ -1451,7 +1451,11 @@ header .list-inline .dropdown-menu ul li a:focus,
 .tooltip .tooltip-inner,
 .bgc-secondary,
 .product-image .label-product.label-new {
-    background-color: gray;
+    background-color: #ededed;
+}
+
+footer{
+    background-color:#ededed !important;
 }
 
 .bgc-transparent,
@@ -2223,29 +2227,23 @@ background-size: cover;
 background-repeat: no-repeat;
 position: relative;
 }
-.nike h1{
-  position: absolute;
-  left: 60%;
-  top: 12%;
-  color: #242424;
-  font-size: 40px;
+.nike h1 {
+    position: absolute;
+    left: 60%;
+    top: 12%;
+    color: #806938;
+    font-size: 40px;
 }
-.nike p{
+
+
+.nike h2 {
     position: absolute;
-    left: 60%;
-    top: 28%;
-    color: #000000;
-    /* font-size: 40px; */
-  }
-  
-.nike h2{
-    position: absolute;
-    left: 60%;
-    top: 16%;
-    color: #242424;
+    left: 20%;
+    top: 5%;
+    color: #8D7A45;
     font-size: 30px;
     margin-top: 2%;
-  }
+}
   .nike a{
     position: absolute;
     left: 60%;
@@ -2695,10 +2693,7 @@ position: relative;
 
 
 
-/**
- * Components Promo Banner
- *
- */
+
 
 .promo-banner>a {
     display: inline-block;
@@ -2706,7 +2701,7 @@ position: relative;
 }
 
 .promo-banner img {
-    width: 100%;
+    width: 80%;
 }
 
 .promo-banner.hover-effect-1>a::before {
@@ -2802,11 +2797,6 @@ position: relative;
 
 
 
-/**
- * Components Section Title
- *
- */
-
 .section-title {
     text-align: center;
     margin-bottom: 40px;
@@ -2852,11 +2842,6 @@ position: relative;
 }
 
 
-
-/**
- * Components Slider nav
- *
- */
 
 .swiper-arrow {
     margin-top: -23px;
@@ -2952,10 +2937,6 @@ position: relative;
 
 
 
-/**
- * Components Tab Navs
- *
- */
 
 .nav.nav-pills {
     margin-top: -10px;
@@ -3060,10 +3041,6 @@ position: relative;
     flex: 0 0 270px;
 }
 
-/**
- * Components Product
- *
- */
 
 .gallery-with-thumbs {
     display: -webkit-box;
@@ -3594,10 +3571,6 @@ position: relative;
 
 
 
-/**
- * Components Testimonial
- *
- */
 
 .testimonial-container {
     text-align: center;
@@ -3641,13 +3614,6 @@ position: relative;
 
 
 
-/**
- * Components Widgets
- *
- */
-
-
-/* Widget Title */
 
 .widgettitle {
     font-size: 20px;
@@ -3672,8 +3638,6 @@ position: relative;
 }
 
 
-
-/* Search Widget */
 
 .search-widget form {
     -webkit-flex-wrap: nowrap;
@@ -3721,9 +3685,6 @@ position: relative;
 }
 
 
-
-/* Text Widget */
-
 .widget-content p {
     font-size: 14px;
     font-weight: 400;
@@ -3753,8 +3714,6 @@ position: relative;
 }
 
 
-
-/* Recent Posts Widget */
 
 .recent-posts-widget-container .swiper-arrow,
 .recent-posts-widget .swiper-arrow {
@@ -3872,7 +3831,6 @@ position: relative;
 
 
 
-/* Widgetized Menu */
 
 .widgetized-menu li a {
     font-size: 14px;
@@ -3884,8 +3842,6 @@ position: relative;
 
 
 
-/* Newsletter Widget */
-
 .newsletter-widget p {
     font-size: 13px;
     color: #c0c0c0;
@@ -3895,7 +3851,7 @@ position: relative;
 
 .newsletter-widget input {
     height: 45px;
-    background: red;
+    background: #fff;
     color: #c0c0c0;
     padding: 10px 150px 10px 15px;
     display: inline-block;
@@ -3961,9 +3917,6 @@ position: relative;
 }
 
 
-
-/* Social Widget */
-
 .social-widget .list-inline a {
     display: block;
     width: 40px;
@@ -3978,8 +3931,6 @@ position: relative;
 }
 
 
-
-/* Tags Widget */
 
 .tags-widget {
     margin-bottom: -10px;
@@ -4005,8 +3956,6 @@ position: relative;
 }
 
 
-
-/* Categories Accordion Widget */
 
 .list-categories-widget .cat-accordion {
     margin-top: -7px;
@@ -4077,8 +4026,6 @@ position: relative;
 
 
 
-/* List Widget */
-
 .list-widget .list-group>a {
     text-transform: capitalize;
     font-size: 14px;
@@ -4112,7 +4059,6 @@ position: relative;
 
 
 
-/* Categories Widget */
 
 .categories-widget ul {
     margin: 0;
@@ -4149,7 +4095,6 @@ position: relative;
 
 
 
-/* Color Widget */
 
 .color-widget .color-options {
     list-style: none;
@@ -4208,7 +4153,6 @@ position: relative;
 
 
 
-/* Instagram Widget */
 
 .instagram-area .image-popup {
     display: -webkit-box;
@@ -4263,10 +4207,7 @@ position: relative;
 
 
 
-/**
- * Components To Top
- *
- */
+
 
 #to_top {
     display: none;
@@ -4301,10 +4242,6 @@ position: relative;
 
 
 
-/**
- * Components Breadcrumbs
- *
- */
 
 .breadcrumb {
     padding: 50px 0;
@@ -4345,10 +4282,6 @@ position: relative;
 
 
 
-/**
- * Components Pagination
- *
- */
 
 .pagination-area {
     padding-top: 20px;
@@ -4423,10 +4356,6 @@ position: relative;
 
 
 
-/**
- * Components Custom Inputs
- *
- */
 
 .custom-checkbox label {
     padding-left: 30px;
@@ -4564,10 +4493,6 @@ position: relative;
 
 
 
-/**
- * Components Blog
- *
- */
 
 .blog-grid .post-media {
     border-bottom-left-radius: 0;
@@ -4819,10 +4744,6 @@ position: relative;
 
 
 
-/**
- * Components Blog Carousel
- *
- */
 
 .mini-blog .post-title {
     font-size: 18px;
@@ -4902,11 +4823,6 @@ position: relative;
 
 
 
-/**
- * Components Comments
- *
- */
-
 .comments-area h3 {
     text-transform: initial;
     font-size: 20px;
@@ -4950,10 +4866,6 @@ position: relative;
 
 
 
-/**
- * Components Team Member
- *
- */
 
 .team-wrapper {
     -webkit-box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
@@ -5043,10 +4955,6 @@ position: relative;
 
 
 
-/**
- * Components Info Box
- *
- */
 
 .info-box {
     border: 1px solid #ebebeb;
@@ -5081,10 +4989,7 @@ position: relative;
 
 
 
-/**
- * Components Accordion
- *
- */
+
 
 .faqs-accordion .card {
     border-top: 0;
@@ -5158,10 +5063,6 @@ position: relative;
 
 
 
-/**
- * Components Instagram
- *
- */
 
 .instagram-container {
     margin: 0 auto;
@@ -5257,15 +5158,7 @@ position: relative;
 
 
 
-/************************************************************
-    c20 - Layout - Header
-*************************************************************/
 
-
-/**
- * Layout Header
- *
- */
 
 header .top-bar {
     padding: 15px 0;
@@ -5416,10 +5309,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/**
- * Layout Main-menu
- *
- */
 
 .main-nav-area {
     z-index: 99;
@@ -5487,15 +5376,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c21 - Layout - Footer
-*************************************************************/
-
-
-/**
- * Layout Footer
- *
- */
 
 .footer-widgets-area .footer-inner {
     border-bottom: 1px solid #303030;
@@ -5557,15 +5437,7 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c22 - Layout - Various Sliders
-*************************************************************/
 
-
-/**
- * Layout Primary Slider
- *
- */
 
 #primary_slider .slide-inner {
     width: 100%;
@@ -5584,11 +5456,6 @@ header.header-type-4 .header-text span:first-child {
 }
 
 
-
-/**
- * Layout Products Slider
- *
- */
 
 .product-row.row {
     margin-left: -45px;
@@ -5636,15 +5503,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c23 - Layout - Clients
-*************************************************************/
-
-
-/**
- * Layout Clients
- *
- */
 
 .clients {
     padding: 5px;
@@ -5664,15 +5522,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c24 - Layout - Newsletter
-*************************************************************/
-
-
-/**
- * Layout Newsletter
- *
- */
 
 .newsletter-section .newsletter-title h6 {
     font-weight: 400;
@@ -5769,10 +5618,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/**
- * Layout Newsletter Popup
- *
- */
 
 .newsletter-popup {
     background: rgba(0, 0, 0, 0.7);
@@ -5895,15 +5740,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c25 - Layout - Shop
-*************************************************************/
-
-
-/**
- * Layout Shop
- *
- */
 
 .shop-wrapper h1 {
     font-size: 20px;
@@ -6097,15 +5933,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c26 - Layout - Single Product
-*************************************************************/
-
-
-/**
- * Layout Single Product
- *
- */
 
 .single-product-wrapper .product-name {
     margin-bottom: 15px;
@@ -6224,15 +6051,7 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c27 - Layout - Cart Page
-*************************************************************/
 
-
-/**
- * Layout Shopping Cart
- *
- */
 
 .shopping-cart-wrapper .table {
     text-align: center;
@@ -6379,15 +6198,6 @@ header.header-type-4 .header-text span:first-child {
 }
 
 
-
-/************************************************************
-    c28 - Layout - Checkout
-*************************************************************/
-
-
-/**
- * Layout Checkout
- *
  */
 
 .checkout-wrapper .user-actions h3 {
@@ -6534,14 +6344,7 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c29 - Layout - My Account
-*************************************************************/
 
-
-/**
- * Layout My Account
- *
  */
 
 .user-info {
@@ -6708,15 +6511,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c30 - Layout - Login / Register
-*************************************************************/
-
-
-/**
- * Layout Login / Register
- *
- */
 
 .login-wrapper .login-form {
     padding: 50px 50px 40px;
@@ -6741,17 +6535,6 @@ header.header-type-4 .header-text span:first-child {
     font-size: 16px;
 }
 
-
-
-/************************************************************
-    c31 - Layout - Wishlist & Compare
-*************************************************************/
-
-
-/**
- * Layout Wishlist & Compare
- *
- */
 
 .comparison-wrapper .table,
 .wishlist-wrapper .table {
@@ -7264,15 +7047,7 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c37 - Layout - FAQs Page
-*************************************************************/
 
-
-/**
- * Layout Faqs page
- *
- */
 
 .faqs-section p:not(.lead),
 .faqs-section .card-body {
@@ -7282,15 +7057,6 @@ header.header-type-4 .header-text span:first-child {
 
 
 
-/************************************************************
-    c38 - Layout - 404 Page
-*************************************************************/
-
-
-/**
- * Layout 404 Page
- *
- */
 
 .error-wrapper h1 {
     font-size: 200px;

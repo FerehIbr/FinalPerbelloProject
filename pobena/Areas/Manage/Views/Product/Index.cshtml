@@ -64,7 +64,7 @@
         <td>
             <a class="btn btn-primary" asp-action="Detail" asp-route-status="@ViewBag.Status" asp-route-page="@ViewBag.PageIndex" asp-route-id="@product.Id">Detail</a>
             <a class="btn btn-warning" asp-action="Update" asp-route-status="@ViewBag.Status" asp-route-page="@ViewBag.PageIndex" asp-route-id="@product.Id">Update</a>
-            <a class="btn btn-danger" asp-action="Delete" asp-route-status="@ViewBag.Status" asp-route-page="@ViewBag.PageIndex" asp-route-id="@product.Id">Delete</a>
+            <a class="btn btn-danger" asp-controller="Product" asp-action="Delete" asp-area="manage" asp-route-status="@ViewBag.Status" asp-route-page="@ViewBag.PageIndex" asp-route-id="@product.Id">Delete</a>
         </td>
     </tr>}
             </tbody>
