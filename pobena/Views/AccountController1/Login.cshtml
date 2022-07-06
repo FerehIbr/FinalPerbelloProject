@@ -1,8 +1,10 @@
-﻿@model RegisterVM
-@{
-    ViewData["Title"] = "Register";
+﻿@model LoginVM
+@{ ViewData["Title"] = "Register"; }
 
-}
+
+
+
+
 
 <div class="breadcrumb-section bgc-offset mb-full">
     <div class="container">
@@ -10,15 +12,15 @@
             <div class="col-12 col-sm-12 col-md-12">
                 <nav class="breadcrumb">
                     <a class="breadcrumb-item" href="index.html">Home</a>
-                    <span class="breadcrumb-item active">Register</span>
+                    <span class="breadcrumb-item active">Login</span>
                 </nav>
             </div>
         </div>
     </div>
 </div>
 
-<div id="content" class="main-content-wrapper">
 
+<div id="content" class="main-content-wrapper">
     <div class="login-wrapper">
         <div class="container">
             <div class="row">
@@ -28,15 +30,15 @@
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12">
                                     <div class="section-title">
-                                        <h2>Create an Account</h2>
+                                        <h2>Log in to your account</h2>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 offset-xl-2">
-                                    <div class="registration-form login-form">
-                                        @await Html.PartialAsync("_RegisterIndexPartial", Model)
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-6 offset-lg-2 offset-xl-3">
+                                    <div class="login-form">
+                                        @await Html.PartialAsync("_LoginIndexPartial", Model)
                                     </div>
                                 </div>
                             </div>
@@ -48,3 +50,4 @@
     </div>
 
 </div>
+

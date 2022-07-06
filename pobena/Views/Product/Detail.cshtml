@@ -105,9 +105,8 @@
                                                 <div class="product-size">
                                                     <label>Size</label>
                                                     <select class="nice-select">
-                                                        <option>S</option>
-                                                        <option>M</option>
-                                                        <option>L</option>
+                                                        <option>@Model.ProductColorSizes.ElementAt(0).Size.Name</option>
+                                                      
                                                     </select>
                                                 </div>
                                                 <div class="product-color">
@@ -115,7 +114,7 @@
                                                     <ul class="color-list">
                                                     
                                                         <li>
-                                                            <a class="white" href="#"></a>
+                                                            <a class="white" href="#">@Model.ProductColorSizes.ElementAt(0).Color.Name</a>
                                                         </li>
                                                    
                                                     </ul>
@@ -123,15 +122,9 @@
                                             </div>
                                             <div class="product-stock">
                                                 <form action="#">
-                                                    <label>Quantity</label>
+                                                   
                                                     <ul class="d-flex flex-wrap align-items-center">
-                                                        <li class="box-quantity">
-                                                            <div class="cart-input">
-                                                                <input class="cart-input-box" type="text" value="0">
-                                                                <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
-                                                                <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
-                                                            </div>
-                                                        </li>
+                                                      
                                                         <li>
 
                                                             <a class="btn-cart addtocart" asp-controller="Home"
@@ -330,9 +323,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h4 class="product-name"><a href="single-product.html">Fusion Backpack</a></h4>
+                                                    <h4 class="product-name"><a href="single-product.html">@item.Product.Name</a></h4>
                                                     <p class="product-price">
-                                                        <span class="price-new">$55.70</span>
+                                                        <span class="price-new">$@item.Product.Price</span>
                                                     </p>
                                                 </div>
                                             </div>

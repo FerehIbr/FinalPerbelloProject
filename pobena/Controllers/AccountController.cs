@@ -15,9 +15,9 @@ using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
 
-namespace pobena.Areas.Manage.Controllers
+namespace pobena.Controllers
 {
-    public class AccountController1 : Controller
+    public class AccountController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<AppUser> _userManager;
@@ -25,7 +25,7 @@ namespace pobena.Areas.Manage.Controllers
         private readonly AppDbContext _context;
         private readonly IConfiguration _config;
 
-        public AccountController1(RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, AppDbContext context, IConfiguration config)
+        public AccountController(RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, AppDbContext context, IConfiguration config)
         {
             _roleManager = roleManager;
             _userManager = userManager;
