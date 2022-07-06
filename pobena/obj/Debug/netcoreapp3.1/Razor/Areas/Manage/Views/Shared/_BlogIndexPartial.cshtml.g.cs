@@ -19,8 +19,15 @@ using pobena.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\_ViewImports.cshtml"
+using pobena.ViewModels.Account;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2c05a0a918a4e79fa058f7d160b03363253bc77b", @"/Areas/Manage/Views/Shared/_BlogIndexPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f04f3c94ba6d5114b8c8c00ac38baee687c92cd9", @"/Areas/Manage/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f1a8267d36d7929b9fecf0164234e71216188682", @"/Areas/Manage/Views/_ViewImports.cshtml")]
     public class Areas_Manage_Views_Shared__BlogIndexPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Blog>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("width:25%"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -95,7 +102,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
             WriteLiteral("</th>\r\n                <td>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2c05a0a918a4e79fa058f7d160b03363253bc77b6939", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2c05a0a918a4e79fa058f7d160b03363253bc77b7133", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -147,7 +154,7 @@ WriteAttributeValue("", 704, blog.IsDeleted ? "red":"green", 704, 33, false);
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                <td>\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c05a0a918a4e79fa058f7d160b03363253bc77b9724", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c05a0a918a4e79fa058f7d160b03363253bc77b9918", async() => {
                 WriteLiteral("Detail");
             }
             );
@@ -183,7 +190,7 @@ WriteAttributeValue("", 704, blog.IsDeleted ? "red":"green", 704, 33, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c05a0a918a4e79fa058f7d160b03363253bc77b12440", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c05a0a918a4e79fa058f7d160b03363253bc77b12634", async() => {
                 WriteLiteral("Update");
             }
             );
@@ -237,7 +244,7 @@ WriteAttributeValue("", 704, blog.IsDeleted ? "red":"green", 704, 33, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c05a0a918a4e79fa058f7d160b03363253bc77b16364", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c05a0a918a4e79fa058f7d160b03363253bc77b16558", async() => {
 #nullable restore
 #line 28 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Shared\_BlogIndexPartial.cshtml"
                                                                                                                                                                                                                                                                                    Write(blog.IsDeleted ? "Restore":"Delete");

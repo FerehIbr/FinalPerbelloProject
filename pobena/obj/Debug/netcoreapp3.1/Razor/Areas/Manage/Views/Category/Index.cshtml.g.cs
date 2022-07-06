@@ -19,8 +19,15 @@ using pobena.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\_ViewImports.cshtml"
+using pobena.ViewModels.Account;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"baf0165fa5098957b27c4d4e6130e2944523d64d", @"/Areas/Manage/Views/Category/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f04f3c94ba6d5114b8c8c00ac38baee687c92cd9", @"/Areas/Manage/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f1a8267d36d7929b9fecf0164234e71216188682", @"/Areas/Manage/Views/_ViewImports.cshtml")]
     public class Areas_Manage_Views_Category_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Category>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "false", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -75,7 +82,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
             WriteLiteral("<div class=\"container-fluid py-4\">\r\n\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-2 h3 mb-4 text-gray-800\">\r\n            <h1>Categories</h1>\r\n        </div>\r\n        <div class=\"col-lg-8 h3 mb-4 text-gray-800\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d9036", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d9230", async() => {
                 WriteLiteral("\r\n                <div class=\"row align-items-end\">\r\n                    <div class=\"form-group col\">\r\n                        <label>Status</label>\r\n                        <select class=\"form-control\" name=\"status\">\r\n");
 #nullable restore
 #line 16 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
@@ -86,7 +93,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
                 WriteLiteral("                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d9830", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d10024", async() => {
                     WriteLiteral("All");
                 }
                 );
@@ -103,7 +110,7 @@ using pobena.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d11196", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d11391", async() => {
                     WriteLiteral("Active");
                 }
                 );
@@ -119,7 +126,7 @@ using pobena.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d12468", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d12663", async() => {
                     WriteLiteral("DeActive");
                 }
                 );
@@ -145,7 +152,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
                 WriteLiteral("                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d14053", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d14248", async() => {
                     WriteLiteral("All");
                 }
                 );
@@ -159,7 +166,7 @@ using pobena.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d15113", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d15308", async() => {
                     WriteLiteral("Active");
                 }
                 );
@@ -175,7 +182,7 @@ using pobena.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d16401", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d16596", async() => {
                     WriteLiteral("DeActive");
                 }
                 );
@@ -204,7 +211,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
                 WriteLiteral("                                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d18329", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d18524", async() => {
                     WriteLiteral("All");
                 }
                 );
@@ -218,7 +225,7 @@ using pobena.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d19405", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d19600", async() => {
                     WriteLiteral("Active");
                 }
                 );
@@ -237,7 +244,7 @@ using pobena.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                                                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d21032", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d21227", async() => {
                     WriteLiteral("DeActive");
                 }
                 );
@@ -283,7 +290,7 @@ using pobena.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </div>\r\n        <div class=\"col-lg-2 h3 mb-4 text-gray-800\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d23795", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d23990", async() => {
                 WriteLiteral("Create");
             }
             );
@@ -321,7 +328,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
             WriteLiteral("        <li class=\"page-item\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d26385", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d26580", async() => {
                 WriteLiteral("\r\n                ");
 #nullable restore
 #line 62 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
@@ -379,7 +386,7 @@ using pobena.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </li>\r\n                        <li class=\"page-item\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d30402", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d30597", async() => {
                 WriteLiteral("\r\n                                ");
 #nullable restore
 #line 67 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
@@ -451,7 +458,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                        <li class=\"page-item\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d35142", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d35337", async() => {
 #nullable restore
 #line 72 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
                                                                                                                                                                                                      Write(ViewBag.PageIndex-2);
@@ -519,7 +526,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                                                        <li class=\"page-item\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d39943", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d40138", async() => {
 #nullable restore
 #line 73 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
                                                                                                                                                                                                                                      Write(ViewBag.PageIndex-1);
@@ -587,7 +594,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                    <li class=\"page-item active\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d44879", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d45074", async() => {
 #nullable restore
 #line 75 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
                                                                                                                                                                                                    Write(ViewBag.PageIndex);
@@ -656,7 +663,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
             WriteLiteral("        <li class=\"page-item\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d49495", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d49690", async() => {
 #nullable restore
 #line 79 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
                                                                                                                                                                                        Write(ViewBag.PageIndex + 1);
@@ -725,7 +732,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
             WriteLiteral("        <li class=\"page-item\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d54087", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d54282", async() => {
 #nullable restore
 #line 82 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
                                                                                                                                                                                      Write(ViewBag.PageIndex+2);
@@ -793,7 +800,7 @@ using pobena.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                                        <li class=\"page-item\">\r\n                                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d58840", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d59035", async() => {
                 WriteLiteral("\r\n                                                ");
 #nullable restore
 #line 85 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
@@ -854,7 +861,7 @@ using pobena.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                        </li>\r\n                                                        <li class=\"page-item\">\r\n                                                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d63184", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d63379", async() => {
                 WriteLiteral("\r\n                                                                ");
 #nullable restore
 #line 90 "C:\Users\farahei\Desktop\forfarah\pobena\Areas\Manage\Views\Category\Index.cshtml"
@@ -927,7 +934,7 @@ using pobena.Models;
             WriteLiteral("                </ul>\r\n            </nav>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n");
             DefineSection("Script", async() => {
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d68157", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d68352", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -941,7 +948,7 @@ using pobena.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d69258", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "baf0165fa5098957b27c4d4e6130e2944523d64d69453", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -971,7 +978,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ScriptTagHelper.AppendVersion = true;
             WriteLiteral("\r\n");
             DefineSection("Style", async() => {
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "baf0165fa5098957b27c4d4e6130e2944523d64d71401", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "baf0165fa5098957b27c4d4e6130e2944523d64d71596", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

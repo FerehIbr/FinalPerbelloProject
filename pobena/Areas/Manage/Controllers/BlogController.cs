@@ -73,11 +73,6 @@ namespace pobena.Areas.Manage.Controllers
                 return View(blog);
             }
 
-            if (blog.Title.CheckString())
-            {
-                ModelState.AddModelError("Title", "Yalniz Herf Ola Biler");
-                return View(blog);
-            }
 
             if (await _context.Blogs.AnyAsync(t => t.Title.ToLower().Trim() == blog.Title.ToLower().Trim()))
             {
@@ -91,7 +86,7 @@ namespace pobena.Areas.Manage.Controllers
                     ModelState.AddModelError("ImageFile", "Secilen Seklin Novu Uygun Deyil");
                     return View();
                 }
-                if (!blog.ImageFile.CheckFileSize(200))
+                if (!blog.ImageFile.CheckFileSize(200000))
                 {
                     ModelState.AddModelError("ImageFile", "Secilen Seklin Olcusu Maksimum 100 Kb Ola Biler");
                     return View();

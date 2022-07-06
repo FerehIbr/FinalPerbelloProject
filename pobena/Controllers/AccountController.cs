@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 
 namespace pobena.Areas.Manage.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController1 : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<AppUser> _userManager;
@@ -25,7 +25,7 @@ namespace pobena.Areas.Manage.Controllers
         private readonly AppDbContext _context;
         private readonly IConfiguration _config;
 
-        public AccountController(RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, AppDbContext context, IConfiguration config)
+        public AccountController1(RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, AppDbContext context, IConfiguration config)
         {
             _roleManager = roleManager;
             _userManager = userManager;
@@ -193,8 +193,9 @@ namespace pobena.Areas.Manage.Controllers
                     await _context.SaveChangesAsync();
                 }
             }
-
+            //appUser.IsAdmin = true;
             await _userManager.AddToRoleAsync(appUser, "Member");
+           
             var link = Url.Action(nameof(VerifyEmail), "Account", new { id = appUser.Id, token }, Request.Scheme, Request.Host.ToString());
             EmailVM email = _config.GetSection("Email").Get<EmailVM>();
 

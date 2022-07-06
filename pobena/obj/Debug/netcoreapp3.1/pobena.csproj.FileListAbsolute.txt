@@ -1228,3 +1228,4 @@ C:\Users\user\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\Razor\Views\Shared
 C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ShopProductListPartial.cshtml.g.cs
 C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ShopProductListPartial2.cshtml.g.cs
 C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\pobena.csproj.AssemblyReference.cache
+C:\Users\farahei\Desktop\forfarah\pobena\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Account\Login.cshtml.g.cs
