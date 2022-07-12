@@ -20,23 +20,28 @@ namespace pobena.Controllers
             _context = context;
             _userManager = userManager;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            ViewBag.Categories = await _context.Categories.Where(p =>!p.IsDeleted).ToListAsync();
-            ViewBag.Brands = await _context.Brands.Where(p =>!p.IsDeleted).ToListAsync();
-            ViewBag.Colors = await _context.Colors.Where(p =>!p.IsDeleted).ToListAsync();
+            ViewBag.Categories = await _context.Categories.Where(p => !p.IsDeleted).ToListAsync();
+            ViewBag.Brands = await _context.Brands.Where(p => !p.IsDeleted).ToListAsync();
+            ViewBag.Colors = await _context.Colors.Where(p => !p.IsDeleted).ToListAsync();
+
+
+            ViewBag.PageIndex = page;
+
             ShopVM shopVM = new ShopVM
             {
                 Products = await _context.Products
                .Include(p => p.ProductColorSizes).ThenInclude(p => p.Color)
-                .Include(p => p.ProductColorSizes).ThenInclude(p => p.Size)
-               .Where(p => !p.IsDeleted).ToListAsync(),
-               
-
+               .Include(p => p.ProductColorSizes).ThenInclude(p => p.Size)
+               .Where(p => !p.IsDeleted)
+               .Skip((page - 1) * 12).Take(12)
+               .ToListAsync(),
             };
 
-            return View(shopVM);
+            ViewBag.PageCount = Math.Ceiling((double)shopVM.Products.Count() / 12);
 
+            return View(shopVM);
         }
 
         public async Task<IActionResult> Filter1(string sizes, string colors, string brands,

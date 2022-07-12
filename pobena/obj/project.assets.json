@@ -8630,11 +8630,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\farahei\\Desktop\\forfarah\\pobena\\pobena.csproj",
+      "projectUniqueName": "C:\\Users\\farahei\\Desktop\\FinalPerbelloProject\\pobena\\pobena.csproj",
       "projectName": "pobena",
-      "projectPath": "C:\\Users\\farahei\\Desktop\\forfarah\\pobena\\pobena.csproj",
+      "projectPath": "C:\\Users\\farahei\\Desktop\\FinalPerbelloProject\\pobena\\pobena.csproj",
       "packagesPath": "C:\\Users\\farahei\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\farahei\\Desktop\\forfarah\\pobena\\obj\\",
+      "outputPath": "C:\\Users\\farahei\\Desktop\\FinalPerbelloProject\\pobena\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\farahei\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8704,7 +8704,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
       }
     }
   }

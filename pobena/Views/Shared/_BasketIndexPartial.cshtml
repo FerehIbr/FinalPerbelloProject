@@ -21,7 +21,7 @@
 {
 <tr>
     <td>
-        <a href="single-product.html"><img src="~/assets/images/products/@basket.Image" alt="Cart Product Image" title="Compete Track Tote" class="img-thumbnail"></a>
+        <a asp-controller="Shop" asp-action="Index"><img src="~/assets/images/products/single/@basket.Image" alt="Cart Product Image" title="Compete Track Tote" class="img-thumbnail"></a>
     </td>
     <td>
         <a href="single-product.html">@basket.Name</a>
@@ -33,11 +33,11 @@
     <td>
         <div class="input-group btn-block">
             <div class="cart-input">
-                <div class="qtybutton bdec"><i class="fa fa-angle-down"></i></div>
+               
                 <input class="cart-input-box prod-count" data-id="@basket.ProductId" data-color="@basket.ColorId" data-size="@basket.SizeId" value="@basket.Count">
-                <div class="binc qtybutton"><i class="fa fa-angle-up"></i></div>
-                @*<div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
-                    <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>*@
+               
+                <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                    <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
             </div>
             <span class="input-group-btn">
                 <button type="submit" data-bs-toggle="tooltip" data-direction="top" class="btn btn-primary" data-original-title="Update"><i class="fa fa-refresh"></i></button>
