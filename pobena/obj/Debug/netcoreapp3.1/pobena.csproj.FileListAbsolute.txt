@@ -1358,7 +1358,6 @@ C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\bin\Debug\netcoreapp3.1\run
 C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\pobena.csproj.AssemblyReference.cache
 C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\pobena.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\pobena.AssemblyInfoInputs.cache
 C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\pobena.AssemblyInfo.cs
@@ -1451,3 +1450,5 @@ C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\pob
 C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\pobena.dll
 C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\pobena.pdb
 C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\pobena.genruntimeconfig.cache
+C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\pobena.csproj.AssemblyReference.cache
+C:\Users\farahei\Desktop\FinalPerbelloProject\pobena\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ProfileFormPartial.cshtml.g.cs
