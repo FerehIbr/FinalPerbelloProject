@@ -43,7 +43,7 @@ namespace pobena.Controllers
             List<Product> products = await _context.Products.Where(p => p.Name.ToLower().Contains(query.ToLower())).ToListAsync();
             return PartialView("_ProductSearchPartial", products);
         }
-
+         
 
         public async Task<IActionResult> Detail(int? id)
         {
